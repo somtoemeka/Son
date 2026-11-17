@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@import './App.css';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-width: 320px;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: clip;
+}
+
+img, svg {
+  max-width: 100%;
+}

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" fill="none">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e172a"/>
+      <stop offset="50%" stop-color="#0a1120"/>
+      <stop offset="100%" stop-color="#060a14"/>
+    </linearGradient>
+    <linearGradient id="pGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#784b2c"/>
+      <stop offset="50%" stop-color="#5c381e"/>
+      <stop offset="100%" stop-color="#452711"/>
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162238"/>
+      <stop offset="100%" stop-color="#0d1524"/>
+    </linearGradient>
+    <filter id="pGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="480" height="560" rx="24" fill="url(#pBg)"/>
+  <rect x="2" y="2" width="476" height="556" rx="22" stroke="url(#pGlowGrad)" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Tech Grid Background -->
+  <g opacity="0.05" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="100" x2="480" y2="100"/>
+    <line x1="0" y1="200" x2="480" y2="200"/>
+    <line x1="0" y1="300" x2="480" y2="300"/>
+    <line x1="0" y1="400" x2="480" y2="400"/>
+    <line x1="120" y1="0" x2="120" y2="560"/>
+    <line x1="240" y1="0" x2="240" y2="560"/>
+    <line x1="360" y1="0" x2="360" y2="560"/>
+  </g>
+
+  <!-- Ambient Glow Behind Head -->
+  <circle cx="240" cy="220" r="140" fill="#10b981" opacity="0.18" filter="url(#pGlow)"/>
+  <circle cx="340" cy="180" r="100" fill="#06b6d4" opacity="0.12" filter="url(#pGlow)"/>
+
+  <!-- Geometric Tech Aura Rings -->
+  <circle cx="240" cy="230" r="170" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="6 6"/>
+  <circle cx="240" cy="230" r="200" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.15"/>
+
+  <!-- Character Illustration: Somto Chukwuemeka -->
+  <g id="character">
+    <!-- Shoulders & Hoodie Body -->
+    <path d="M110 560 C110 440, 160 380, 240 380 C320 380, 370 440, 370 560 Z" fill="url(#hoodieGrad)"/>
+    
+    <!-- Hoodie Seams & Zip -->
+    <path d="M240 380 V560" stroke="#1e2d4a" stroke-width="3"/>
+    <!-- Neon Accent Lines on Hoodie -->
+    <path d="M190 440 C190 490, 180 530, 170 560" stroke="#10b981" stroke-width="2" stroke-opacity="0.4"/>
+    <path d="M290 440 C290 490, 300 530, 310 560" stroke="#06b6d4" stroke-width="2" stroke-opacity="0.4"/>
+
+    <!-- Hoodie Collar Fold -->
+    <path d="M180 375 C190 410, 215 425, 240 425 C265 425, 290 410, 300 375 C275 390, 205 390, 180 375 Z" fill="#0b121e"/>
+
+    <!-- Neck -->
+    <rect x="215" y="320" width="50" height="70" rx="10" fill="url(#skinGrad)"/>
+    
+    <!-- Over-Ear Tech Headphones around neck -->
+    <path d="M165 345 C165 395, 315 395, 315 345" stroke="#1e2c44" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <rect x="155" y="325" width="24" height="42" rx="12" fill="#09111c" stroke="#10b981" stroke-width="2"/>
+    <rect x="301" y="325" width="24" height="42" rx="12" fill="#09111c" stroke="#06b6d4" stroke-width="2"/>
+
+    <!-- Head / Face -->
+    <ellipse cx="240" cy="235" rx="65" ry="85" fill="url(#skinGrad)"/>
+
+    <!-- Ears -->
+    <ellipse cx="174" cy="238" rx="12" ry="18" fill="#5c381e"/>
+    <ellipse cx="306" cy="238" rx="12" ry="18" fill="#5c381e"/>
+
+    <!-- Stylish Modern Fade Hair -->
+    <path d="M175 220 C175 145, 200 130, 240 130 C280 130, 305 145, 305 220 C305 210, 295 160, 240 155 C185 160, 175 210, 175 220 Z" fill="#0a0a0c"/>
+    <path d="M174 210 C185 155, 220 140, 240 140 C260 140, 295 155, 306 210 Z" fill="#131317"/>
+
+    <!-- Eyebrows -->
+    <path d="M195 205 Q 210 198 225 204" stroke="#0c0c0e" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M255 204 Q 270 198 285 205" stroke="#0c0c0e" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Smart Glasses -->
+    <rect x="190" y="210" width="38" height="28" rx="8" fill="#0a1320" fill-opacity="0.3" stroke="#10b981" stroke-width="2.5"/>
+    <rect x="252" y="210" width="38" height="28" rx="8" fill="#0a1320" fill-opacity="0.3" stroke="#10b981" stroke-width="2.5"/>
+    <line x1="228" y1="222" x2="252" y2="222" stroke="#10b981" stroke-width="2.5"/>
+    <!-- Glass Reflections -->
+    <line x1="194" y1="216" x2="208" y2="216" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="256" y1="216" x2="270" y2="216" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Eyes -->
+    <circle cx="209" cy="224" r="5" fill="#1b120c"/>
+    <circle cx="271" cy="224" r="5" fill="#1b120c"/>
+    <circle cx="207" cy="222" r="1.5" fill="#ffffff"/>
+    <circle cx="269" cy="222" r="1.5" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <path d="M236 235 Q 240 252 233 256 Q 240 260 247 256" stroke="#3d210d" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Warm Confident Smile -->
+    <path d="M222 274 Q 240 288 258 274" stroke="#2b1507" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M226 274 Q 240 284 254 274" fill="#ffffff" opacity="0.9"/>
+  </g>
+
+  <!-- Laptop Glow from Bottom -->
+  <path d="M120 560 L240 500 L360 560 Z" fill="#06b6d4" opacity="0.08" filter="url(#pGlow)"/>
+
+  <!-- Live Status Floating Badge (Top Right) -->
+  <g transform="translate(290, 40)">
+    <rect width="155" height="38" rx="19" fill="#0a1526" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="20" cy="19" r="5" fill="#10b981"/>
+    <circle cx="20" cy="19" r="8" fill="#10b981" opacity="0.3"/>
+    <text x="34" y="23" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="#f8fafc">Open for Work</text>
+  </g>
+
+  <!-- Nigerian & Student Identity Badge (Bottom Left) -->
+  <g transform="translate(30, 460)">
+    <rect width="210" height="66" rx="16" fill="#0a1424" stroke="#1c2f4d" stroke-width="1.5"/>
+    <text x="18" y="26" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="13" fill="#f8fafc">Somto Chukwuemeka</text>
+    <text x="18" y="44" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#10b981">🇳🇬 Nigerian · CS Undergrad</text>
+    <text x="18" y="56" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#94a3b8">Afe Babalola University (ABUAD)</text>
+  </g>
+
+  <!-- Stack Pills (Bottom Right) -->
+  <g transform="translate(285, 475)">
+    <rect width="75" height="24" rx="12" fill="#101d32" stroke="#10b981" stroke-width="1"/>
+    <text x="37" y="16" font-family="'Space Grotesk', sans-serif" font-weight="600" font-size="10" fill="#10b981" text-anchor="middle">⚡ Flutter</text>
+
+    <rect x="82" width="75" height="24" rx="12" fill="#101d32" stroke="#06b6d4" stroke-width="1"/>
+    <text x="119" y="16" font-family="'Space Grotesk', sans-serif" font-weight="600" font-size="10" fill="#06b6d4" text-anchor="middle">⚛ React</text>
+  </g>
+</svg>

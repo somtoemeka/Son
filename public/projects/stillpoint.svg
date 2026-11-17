@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="spBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121a"/>
+      <stop offset="50%" stop-color="#0d1822"/>
+      <stop offset="100%" stop-color="#060c12"/>
+    </linearGradient>
+    <linearGradient id="spShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="spGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#spBg)"/>
+
+  <!-- Subtle Sensor Grid & Circles -->
+  <circle cx="300" cy="200" r="160" stroke="#162938" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="300" cy="200" r="110" stroke="#1c364a" stroke-width="1"/>
+  <circle cx="300" cy="200" r="60" stroke="#224863" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- Radar Sweep Cone -->
+  <path d="M300 200 L420 120 A160 160 0 0 1 450 240 Z" fill="#10b981" opacity="0.08"/>
+
+  <!-- Floating Mobile Security Frame -->
+  <g transform="translate(195, 30)">
+    <rect width="210" height="345" rx="34" fill="#080e14" stroke="#1e3a4e" stroke-width="3"/>
+    <rect x="7" y="7" width="196" height="331" rx="27" fill="#0c1620"/>
+    
+    <!-- Notch -->
+    <rect x="68" y="15" width="60" height="10" rx="5" fill="#080e14"/>
+
+    <!-- App Header -->
+    <text x="24" y="48" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#f8fafc">Stillpoint</text>
+    <rect x="145" y="38" width="36" height="15" rx="7.5" fill="#10b981" opacity="0.2"/>
+    <text x="163" y="49" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="8" fill="#10b981" text-anchor="middle">ARMED</text>
+
+    <!-- Center Shield Icon -->
+    <g transform="translate(68, 75)">
+      <circle cx="30" cy="35" r="42" fill="#10b981" opacity="0.1" filter="url(#spGlow)"/>
+      <path d="M30 10 L52 20 V38 C52 52 42 63 30 68 C18 63 8 52 8 38 V20 Z" fill="url(#spShieldGrad)" stroke="#34d399" stroke-width="2"/>
+      <path d="M22 36 L27 41 L39 29" stroke="#080e14" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <text x="98" y="172" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14" fill="#f8fafc" text-anchor="middle">Sensor Guard Active</text>
+    <text x="98" y="188" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Accelerometer · Gyroscope</text>
+
+    <!-- Realtime Waveform Graph -->
+    <rect x="18" y="202" width="160" height="48" rx="10" fill="#081018" stroke="#162938" stroke-width="1"/>
+    <path d="M25 226 Q 40 226, 50 216 T 70 236 T 90 226 T 110 210 T 130 238 T 150 226 T 170 226" fill="none" stroke="#10b981" stroke-width="2"/>
+    <circle cx="110" cy="210" r="3" fill="#34d399"/>
+
+    <!-- Decoy Trigger Toggle Card -->
+    <rect x="18" y="260" width="160" height="48" rx="10" fill="#111f2c" stroke="#1c384e" stroke-width="1"/>
+    <text x="28" y="280" font-family="'Space Grotesk', sans-serif" font-weight="600" font-size="10" fill="#f8fafc">Decoy Lock Screen</text>
+    <text x="28" y="294" font-family="'Space Grotesk', sans-serif" font-size="8" fill="#64748b">Silent alarm on tamper</text>
+    <circle cx="156" cy="284" r="10" fill="#10b981"/>
+    <circle cx="160" cy="284" r="6" fill="#f8fafc"/>
+  </g>
+
+  <!-- Left Stats Card -->
+  <g transform="translate(30, 130)">
+    <rect width="135" height="90" rx="14" fill="#0f1d28" stroke="#1a3548" stroke-width="1"/>
+    <text x="18" y="30" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="10" fill="#10b981">MOTION DETECTION</text>
+    <text x="18" y="56" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="20" fill="#f8fafc">0.02g</text>
+    <text x="18" y="74" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#94a3b8">Ultra-high sensitivity</text>
+  </g>
+
+  <!-- Right Defense Card -->
+  <g transform="translate(435, 170)">
+    <rect width="135" height="95" rx="14" fill="#0f1d28" stroke="#1a3548" stroke-width="1"/>
+    <text x="18" y="30" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="10" fill="#06b6d4">RESPONSE TIME</text>
+    <text x="18" y="56" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="20" fill="#f8fafc">&lt; 12ms</text>
+    <text x="18" y="76" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#94a3b8">Instant background alert</text>
+  </g>
+</svg>
